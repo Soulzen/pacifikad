@@ -1,14 +1,14 @@
 :root {
-  --clr-primary: #006373;
-  --clr-secondary: #05a3a4;
-  --clr-teriary: #d9e5df;
+  --clr-primary-dark: #006373;
+  --clr-primary-mid: #05a3a4;
+  --clr-primary-soft: #d9e5df;
   --clr-accent: #b35a22;
   --clr-accent-soft: #e8891d;
-  --clr-white: #ffffff;
-  --clr-black: #000000;
+  --clr-white: #f6faf9;
+  --clr-black: #0c0c20;
 
   --font-basic: "Quicksand", sans-serif;
-  /* --font-accent: "Urbanist", sans-serif; */
+  --font-accent: "Open Sans", sans-serif;
 }
 
 *,
