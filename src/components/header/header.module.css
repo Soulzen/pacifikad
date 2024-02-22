@@ -6,6 +6,7 @@
   top: 0;
   z-index: 1000;
   padding: 0.5em 0;
+  box-shadow: 0 0.5em 0.5rem rgba(0, 0, 0, 0.1);
 }
 
 .container {
@@ -25,16 +26,17 @@
 }
 
 .logo {
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 2.5rem;
+  height: 2.5rem;
 }
 
 .heading {
   font-family: var(--font-accent);
   font-weight: 700;
-  font-size: 1.625rem;
+  font-size: 1.25rem;
   /* line-height: 1rem 28px; */
-  letter-spacing: 0.2em;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
 }
 
 .nav_menu {
