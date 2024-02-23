@@ -21,12 +21,17 @@ const NavBar = ({ desktop }: NavBarProps) => {
         </li>
         <li className={styles.nav_item}>
           <Link href="/servicios" className={styles.nav_link}>
-            Proyectos
+            Pacifikad
           </Link>
         </li>
         <li className={styles.nav_item}>
           <Link href="/contacto" className={styles.nav_link}>
-            Conócenos
+            Novedades
+          </Link>
+        </li>
+        <li className={styles.nav_item}>
+          <Link href="/contacto" className={styles.nav_link}>
+            Conversemos
           </Link>
         </li>
       </ul>

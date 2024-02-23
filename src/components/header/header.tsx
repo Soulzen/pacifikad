@@ -5,7 +5,7 @@ import { usePathname } from "next/navigation"
 import Link from "next/link"
 
 import styles from "./header.module.css"
-import NavBar from "../hero/navbar/navbar"
+import NavBar from "./navbar/navbar"
 import Logo from "@/icons/Logo"
 
 export function Header() {
