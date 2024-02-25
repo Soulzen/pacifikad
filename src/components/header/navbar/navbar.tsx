@@ -20,12 +20,15 @@ const NavBar = ({ desktop }: NavBarProps) => {
           </Link>
         </li>
         <li className={styles.nav_item}>
-          <Link href="/servicios" className={styles.nav_link}>
+          <Link
+            href="/servicios"
+            className={`${styles.nav_link} ${styles.nav_link__selected}`}
+          >
             Pacifikad
           </Link>
         </li>
         <li className={styles.nav_item}>
-          <Link href="/contacto" className={styles.nav_link}>
+          <Link href="/news" className={styles.nav_link}>
             Novedades
           </Link>
         </li>

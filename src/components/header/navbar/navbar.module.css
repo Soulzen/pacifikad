@@ -4,7 +4,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 1em;
+  /* padding: 1em; */
 }
 
 .navbar_nav {
@@ -28,8 +28,13 @@
   text-transform: uppercase;
   font-family: var(--font-accent);
   font-size: 1rem;
-  font-weight: 700;
+  font-weight: 400;
   letter-spacing: 0.15em;
+}
+
+.nav_link__selected {
+  font-size: 1.125rem;
+  font-weight: 700;
 }
 
 @media (min-width: 901px) {
