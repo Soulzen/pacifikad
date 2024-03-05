@@ -1,6 +1,6 @@
 .section {
+  /* background-color: var(--clr-white); */
   padding: 3em 0;
-  background-color: var(--clr-white);
 }
 
 .container {
@@ -21,18 +21,27 @@
 .text {
   display: flex;
   flex-direction: column;
-  margin-top: 2em;
+  margin: 0 1em 2em;
   align-items: center;
   gap: 1em;
+  padding: 1em;
+  margin-bottom: 1em;
   text-align: left;
   font-family: var(--font-basic);
   font-weight: 400;
   font-size: 1rem;
-  color: var(--clr-primary-dark);
+  background-color: var(--clr-primary-dark);
+  color: var(--clr-white);
 }
 
 .last {
   font-family: var(--font-accent);
   text-align: center;
   color: var(--clr-accent-soft);
+}
+
+.image {
+  position: relative;
+  margin-top: -2em;
+  z-index: -10;
 }
