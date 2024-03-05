@@ -3,6 +3,7 @@ import styles from "./page.module.css"
 import Hero from "@/components/sections/01-hero/hero"
 import Strategy from "@/components/sections/02-strategy/strategy"
 import WhyUs from "@/components/sections/03-whyUs/whyUs"
+import Presentation from "@/components/sections/04-presentation/presentation"
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <Hero />
       <Strategy />
       <WhyUs />
+      <Presentation />
     </main>
   )
 }
