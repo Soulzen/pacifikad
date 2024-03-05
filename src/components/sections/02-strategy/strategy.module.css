@@ -1,0 +1,37 @@
+.section {
+  padding: 3em 0;
+  background-color: var(--clr-white);
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 2em;
+  font-family: var(--font-basic);
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: var(--clr-primary-dark);
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2em;
+  align-items: center;
+  gap: 1em;
+  text-align: left;
+  font-family: var(--font-basic);
+  font-weight: 400;
+  font-size: 1rem;
+  color: var(--clr-primary-dark);
+}
+
+.last {
+  text-align: center;
+  color: var(--clr-accent-soft);
+}
