@@ -1,0 +1,64 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--clr-primary-dark);
+  padding: 1em;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1em;
+}
+
+.label {
+  font-size: 1.125rem;
+  font-family: var(--font-basic);
+  color: var(--clr-white);
+  letter-spacing: 0.15rem;
+  margin-bottom: 0.25em;
+}
+
+.input {
+  padding: 0.75em 0.625em;
+  font-size: 1rem;
+  font-family: var(--font-basic);
+  color: var(--clr-terciary);
+  background-color: var(--clr-white);
+  border: 2px solid var(--clr-accent);
+}
+
+.button {
+  padding: 1em 0.625em;
+  font-size: 1rem;
+  font-family: var(--font-accent);
+  font-weight: 700;
+  color: var(--clr-white);
+  background-color: var(--clr-primary-mid);
+  border: 2px solid var(--clr-white);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submited {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  /* justify-items: center; */
+  align-items: center;
+}
+
+.confidential {
+  font-size: 0.75rem;
+  font-family: var(--font-basic);
+  color: var(--clr-white);
+  margin-top: 1em;
+}
+
+.thank_text {
+  font-size: 1.25rem;
+  font-family: var(--font-accent);
+  font-weight: 700;
+  text-align: center;
+  color: var(--clr-accent);
+}

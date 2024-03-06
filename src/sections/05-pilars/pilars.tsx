@@ -1,6 +1,6 @@
 import React from "react"
 import styles from "./pilars.module.css"
-import PilarCard from "./pilar-card/pilar-card"
+import PilarCard from "@/components/pilar-card/pilar-card"
 
 import { pilars } from "@/data/pilars"
 
