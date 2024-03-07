@@ -1,4 +1,6 @@
 import type { Metadata } from "next"
+import { SpeedInsights } from "@vercel/speed-insights/next"
+import { Analytics } from "@vercel/analytics/react"
 import { Quicksand, Open_Sans } from "next/font/google"
 import "./globals.css"
 import { Header } from "@/components/header/header"
@@ -30,6 +32,8 @@ export default function RootLayout({
         <Header />
         {children}
         <Footer />
+        <SpeedInsights />
+        <Analytics />
       </body>
     </html>
   )
