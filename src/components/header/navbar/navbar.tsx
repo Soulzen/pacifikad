@@ -1,42 +1,35 @@
 // components/NavBar.js
 
 import Link from "next/link"
+import { usePathname } from "next/navigation"
 
 import styles from "./navbar.module.css"
+import { pages, Page } from "@/data/pages"
 
 type NavBarProps = {
   desktop?: boolean
 }
 
 const NavBar = ({ desktop }: NavBarProps) => {
+  const pathname = usePathname()
+
   return (
     <nav
       className={`${styles.navbar} ${desktop ? styles.navbar__desktop : null}`}
     >
       <ul className={styles.navbar_nav}>
-        <li className={styles.nav_item}>
-          <Link href="/" className={styles.nav_link}>
-            Servicios
-          </Link>
-        </li>
-        <li className={styles.nav_item}>
-          <Link
-            href="/servicios"
-            className={`${styles.nav_link} ${styles.nav_link__selected}`}
-          >
-            Pacifikad
-          </Link>
-        </li>
-        <li className={styles.nav_item}>
-          <Link href="/news" className={styles.nav_link}>
-            Novedades
-          </Link>
-        </li>
-        <li className={styles.nav_item}>
-          <Link href="/contacto" className={styles.nav_link}>
-            Conversemos
-          </Link>
-        </li>
+        {pages.map((page: Page) => (
+          <li key={page.id} className={styles.nav_item}>
+            <Link
+              href={page.url}
+              className={`${styles.nav_link} ${
+                pathname === page.url ? styles.nav_link__selected : ""
+              }`}
+            >
+              {page.title}
+            </Link>
+          </li>
+        ))}
       </ul>
     </nav>
   )
