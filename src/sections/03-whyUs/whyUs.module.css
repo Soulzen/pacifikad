@@ -45,3 +45,29 @@
   margin-top: -2em;
   z-index: -10;
 }
+
+@media (min-width: 900px) {
+  .section {
+    padding: 6em 0;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+  .content {
+    display: flex;
+  }
+
+  .image {
+    width: 50%;
+    margin: 0 0 0 -2em;
+    object-fit: cover;
+    object-position: right;
+  }
+
+  .text {
+    width: 50%;
+    margin: 2em 0;
+    font-size: 1.25rem;
+  }
+}

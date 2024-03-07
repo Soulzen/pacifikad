@@ -6,7 +6,9 @@ import { useForm, ValidationError } from "@formspree/react"
 import styles from "./contact-form.module.css"
 
 function ContactForm() {
-  const [state, handleSubmit] = useForm("xgegzeyz")
+  const [state, handleSubmit] = useForm(
+    `${process.env.NEXT_PUBLIC_FORMSPREE_FORM_ID}`
+  )
   if (state.succeeded) {
     return (
       <div className={styles.submited}>

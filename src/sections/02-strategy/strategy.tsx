@@ -12,6 +12,7 @@ const Strategy = () => {
         </h2>
         <div className={styles.content}>
           <Image
+            className={styles.image}
             src="/images/02.jpg"
             alt="Estrategia de Océanos Azules"
             width={800}

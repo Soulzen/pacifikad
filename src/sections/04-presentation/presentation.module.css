@@ -60,3 +60,29 @@
   text-align: center;
   color: var(--clr-accent-soft);
 }
+
+@media (min-width: 900px) {
+  .section {
+    padding: 6em 0;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .images {
+    width: 40%;
+  }
+
+  .text {
+    margin: 0;
+    width: 50%;
+    font-size: 1.25rem;
+  }
+}

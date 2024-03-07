@@ -35,3 +35,26 @@
   font-size: 1.25rem;
   color: var(--clr-primary-dark);
 }
+
+@media (min-width: 900px) {
+  .section {
+    padding: 6em 0;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .pilars {
+    flex-direction: row;
+    align-items: stretch;
+  }
+
+  .pilars > * {
+    flex: 1;
+  }
+
+  .counterTitle {
+    font-size: 1.75rem;
+  }
+}

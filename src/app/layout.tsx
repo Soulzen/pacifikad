@@ -2,6 +2,7 @@ import type { Metadata } from "next"
 import { Quicksand, Open_Sans } from "next/font/google"
 import "./globals.css"
 import { Header } from "@/components/header/header"
+import Footer from "@/components/footer/footer"
 
 const quicksand = Quicksand({
   subsets: ["latin"],
@@ -28,6 +29,7 @@ export default function RootLayout({
       <body className={`${quicksand.variable} ${open_sans.variable}`}>
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   )

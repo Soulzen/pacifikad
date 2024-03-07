@@ -1,5 +1,7 @@
 .section {
   background-image: url("/images/01.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   padding: 3em 0;
 }
 
@@ -47,6 +49,32 @@
   cursor: pointer;
 }
 
+.button:hover {
+  font-weight: 700;
+  background-color: var(--clr-primary-dark);
+}
+
 .arrow {
   height: 22px;
+}
+
+@media (min-width: 900px) {
+  .section {
+    padding: 8em 0;
+  }
+  .intro {
+    padding: 2em;
+  }
+
+  .intro h2 {
+    font-size: 1.5rem;
+  }
+
+  .intro h1 {
+    font-size: 1.75rem;
+  }
+
+  .button {
+    width: 80%;
+  }
 }
