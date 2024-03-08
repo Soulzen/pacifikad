@@ -18,7 +18,8 @@ const open_sans = Open_Sans({
 
 export const metadata: Metadata = {
   title: "Pacifikad",
-  description: "Estrategia de océanos azules"
+  description:
+    "¡Mujer Emprendedora!. Navegando por los Océanos Azules, Descubre cómo tener éxito en tu estrategia digital acompañada de nuestro equipo Pacifikad "
 }
 
 export default function RootLayout({
