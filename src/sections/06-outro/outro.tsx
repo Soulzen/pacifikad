@@ -7,7 +7,6 @@ const Outro = () => {
     <section className={styles.section}>
       <div className={styles.container}>
         <h2 className={styles.title}>¿Navegamos juntas en tu Negocio?</h2>
-        {/* <div className={styles.placeholder}>Placeholder</div> */}
         <ContactForm />
       </div>
     </section>

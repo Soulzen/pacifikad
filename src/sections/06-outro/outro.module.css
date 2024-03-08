@@ -2,6 +2,7 @@
   background-image: url("/images/06.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   padding: 3em 0;
 }
 
@@ -18,12 +19,4 @@
   font-weight: 500;
   font-size: 1.5rem;
   color: var(--clr-primary-dark);
-}
-
-.placeholder {
-  height: 500px;
-  width: 300px;
-  background-color: var(--clr-primary-dark);
-  margin: 0 auto;
-  margin-top: 2em;
 }
