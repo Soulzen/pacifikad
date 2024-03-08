@@ -20,8 +20,10 @@ const Strategy = () => {
           />
           <div className={styles.text}>
             <p>
-              Somos Camilo y Makarena, fundadores de PACIFIKAD y expertos en
-              Estrategias de Marketing Digital y Campañas Publicitarias.
+              Somos Camilo y Makarena, fundadores de <b>PACIFIKAD</b> y expertos
+              en
+              <b>Estrategias de Marketing Digital</b> y{" "}
+              <b>Campañas Publicitarias</b>.
             </p>
             <p>
               En la digitalización de los últimos años hemos visto cómo el
@@ -30,8 +32,8 @@ const Strategy = () => {
               de competencia y en donde sobrevive el más fuerte.
             </p>
             <p className={styles.last}>
-              ”En los Océanos rojos los peces luchan por sobrevivir de los
-              tiburones, donde rara vez lo consiguen”
+              ”En los <b>Océanos rojos</b> los peces luchan por sobrevivir de
+              los tiburones, donde rara vez lo consiguen”
             </p>
           </div>
         </div>
