@@ -16,7 +16,6 @@ const Outro = () => {
         quality={75}
         fill
         sizes="100vw"
-        priority
       />
       <div className={styles.container}>
         <h2 className={styles.title}>¿Navegamos juntas en tu Negocio?</h2>

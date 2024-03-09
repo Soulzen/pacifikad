@@ -17,6 +17,7 @@ const Hero = () => {
         fill
         sizes="100vw"
         priority
+        layout="responsive"
       />
       <div className={styles.container}>
         <div className={styles.intro}>
