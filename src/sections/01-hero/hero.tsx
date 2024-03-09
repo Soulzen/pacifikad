@@ -1,10 +1,23 @@
 import React from "react"
+import Image from "next/image"
+
 import styles from "./hero.module.css"
 import Arrow from "@/icons/Arrow"
+import hero_image from "@/../public/images/01.jpg"
 
 const Hero = () => {
   return (
     <section className={styles.section}>
+      <Image
+        className={styles.bg_image}
+        alt="Water"
+        src={hero_image}
+        placeholder="blur"
+        quality={75}
+        fill
+        sizes="100vw"
+        priority
+      />
       <div className={styles.container}>
         <div className={styles.intro}>
           <h2 className={styles.pretitle}>Que Bueno tenerte aquí</h2>

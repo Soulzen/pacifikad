@@ -1,6 +1,8 @@
 import React from "react"
-import styles from "./strategy.module.css"
 import Image from "next/image"
+
+import styles from "./strategy.module.css"
+import hand_on_water from "@/../public/images/02.jpg"
 
 const Strategy = () => {
   return (
@@ -13,10 +15,10 @@ const Strategy = () => {
         <div className={styles.content}>
           <Image
             className={styles.image}
-            src="/images/02.jpg"
+            src={hand_on_water}
             alt="Estrategia de Océanos Azules"
-            width={800}
-            height={500}
+            sizes="(max-width: 900px) 100vw,  30vw"
+            priority
           />
           <div className={styles.text}>
             <p>

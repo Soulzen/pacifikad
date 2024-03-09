@@ -1,6 +1,9 @@
 import React from "react"
-import styles from "./presentation.module.css"
 import Image from "next/image"
+
+import styles from "./presentation.module.css"
+import Image1 from "@/../public/images/04-1.jpg"
+import Image2 from "@/../public/images/04-2.jpg"
 
 const Presentation = () => {
   return (
@@ -13,17 +16,15 @@ const Presentation = () => {
           <div className={styles.images}>
             <Image
               className={styles.image1}
-              src="/images/04-1.jpg"
+              src={Image1}
               alt="Makarena"
-              width={400}
-              height={400}
+              sizes="(max-width: 900px) 60vw,  30vw"
             />
             <Image
               className={styles.image2}
-              src="/images/04-2.jpg"
+              src={Image2}
               alt="Camilo"
-              width={400}
-              height={400}
+              sizes="(max-width: 900px) 60vw,  30vw"
             />
           </div>
           <div className={styles.text}>

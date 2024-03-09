@@ -1,8 +1,14 @@
 .section {
-  background-image: url("/images/01.jpg");
+  /* background-image: url("/images/01.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; */
   padding: 3em 0;
+  position: relative;
+}
+
+.bg_image {
+  object-fit: cover;
+  z-index: -10;
 }
 
 .container {

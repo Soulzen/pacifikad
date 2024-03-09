@@ -1,5 +1,10 @@
+import { StaticImageData } from "next/image"
+import Image1 from "../../public/images/05-1.jpg"
+import Image2 from "../../public/images/05-2.jpg"
+import Image3 from "../../public/images/05-3.jpg"
+
 export interface Pilar {
-  src: string
+  src: StaticImageData
   alt: string
   title: string
   description: string
@@ -8,7 +13,7 @@ export interface Pilar {
 
 export const pilars: Pilar[] = [
   {
-    src: "/images/05-1.jpg",
+    src: Image1,
     alt: "Hand on water with rock",
     title: "Alineación de objetivos",
     description:
@@ -16,7 +21,7 @@ export const pilars: Pilar[] = [
     rot: -5
   },
   {
-    src: "/images/05-2.jpg",
+    src: Image2,
     alt: "Woman standing next to the sea",
     title: "Diferenciarte de la  competencia",
     description:
@@ -24,7 +29,7 @@ export const pilars: Pilar[] = [
     rot: 2
   },
   {
-    src: "/images/05-3.jpg",
+    src: Image3,
     alt: "Hand reaching into water",
     title: "Acompañamiento",
     description:

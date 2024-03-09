@@ -1,6 +1,8 @@
 import React from "react"
-import styles from "./whyUs.module.css"
 import Image from "next/image"
+
+import styles from "./whyUs.module.css"
+import woman_walking_on_water from "@/../public/images/03.jpg"
 
 const WhyUs = () => {
   return (
@@ -30,10 +32,9 @@ const WhyUs = () => {
           </div>
           <Image
             className={styles.image}
-            src="/images/03.jpg"
+            src={woman_walking_on_water}
             alt="Océanos Azules"
-            width={800}
-            height={500}
+            sizes="(max-width: 900px) 100vw,  50vw"
           />
         </div>
       </div>

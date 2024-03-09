@@ -1,9 +1,9 @@
 import React from "react"
 import styles from "./pilar-card.module.css"
-import Image from "next/image"
+import Image, { StaticImageData } from "next/image"
 
 interface PilarCardProps {
-  src: string
+  src: StaticImageData
   alt: string
   title: string
   description: string
@@ -18,8 +18,7 @@ const PilarCard = ({ src, alt, title, description, rot }: PilarCardProps) => {
         style={{ rotate: `${rot}deg` }}
         src={src}
         alt={alt}
-        width={400}
-        height={400}
+        sizes="(max-width: 900px) 100vw,  33vw"
       />
       <h3 className={styles.title}>{title}</h3>
       <p className={styles.description}>{description}</p>
