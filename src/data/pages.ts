@@ -13,21 +13,21 @@ export const pages = [
   {
     id: 1,
     title: "Servicios",
-    url: "/servicios"
+    url: "/#"
   },
   {
     id: 2,
     title: "Pacifikad",
-    url: "/pacifikad"
+    url: "/#"
   },
   {
     id: 3,
     title: "Novedades",
-    url: "/news"
+    url: "/#"
   },
   {
     id: 4,
     title: "Conversemos",
-    url: "/contacto"
+    url: "/#"
   }
 ]
