@@ -17,7 +17,7 @@ const Strategy = () => {
             className={styles.image}
             src={hand_on_water}
             alt="Estrategia de Océanos Azules"
-            sizes="(max-width: 900px) 100vw,  30vw"
+            sizes="(max-width: 900px) 100vw,  33vw"
             priority
           />
           <div className={styles.text}>
