@@ -23,7 +23,7 @@ export const pages = [
   {
     id: 3,
     title: "Novedades",
-    url: "/#"
+    url: "/novedades"
   },
   {
     id: 4,
