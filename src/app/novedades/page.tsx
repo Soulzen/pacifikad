@@ -14,7 +14,7 @@ async function getBlogs() {
 }
 
 const Novedades = async () => {
-  const { data, meta } = await getBlogs()
+  //const { data, meta } = await getBlogs()
 
   return (
     <main className={styles.main}>
