@@ -1,7 +1,7 @@
 import React from "react"
 
 const Novedades = () => {
-  return <div>Novedades</div>
+  return <main>Novedades</main>
 }
 
 export default Novedades
