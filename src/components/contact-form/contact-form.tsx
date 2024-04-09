@@ -4,11 +4,10 @@ import React from "react"
 import { useForm, ValidationError } from "@formspree/react"
 
 import styles from "./contact-form.module.css"
+import { NEXT_PUBLIC_FORMSPREE_FORM_ID } from "@/config"
 
 function ContactForm() {
-  const [state, handleSubmit] = useForm(
-    `${process.env.NEXT_PUBLIC_FORMSPREE_FORM_ID}`
-  )
+  const [state, handleSubmit] = useForm(`${NEXT_PUBLIC_FORMSPREE_FORM_ID}`)
   if (state.succeeded) {
     return (
       <div className={styles.submited}>
