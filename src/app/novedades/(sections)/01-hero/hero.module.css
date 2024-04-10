@@ -14,7 +14,7 @@
   border-radius: 1em;
   object-fit: cover;
   z-index: -10;
-  filter: brightness(0.4);
+  filter: brightness(0.6);
 }
 
 .title {
