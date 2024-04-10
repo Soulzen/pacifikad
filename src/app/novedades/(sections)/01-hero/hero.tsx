@@ -12,6 +12,7 @@ const Hero = () => {
             src={novedades_img}
             alt="smooth waves in the ocean"
             fill
+            priority
             sizes="100vw"
           />
           <h1 className={styles.title}>
