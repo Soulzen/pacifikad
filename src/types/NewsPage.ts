@@ -5,72 +5,65 @@
 //   const newsPage = Convert.toNewsPage(json);
 
 export interface NewsPage {
-  data: Datum[]
+  data: NewsPageDatum[]
   meta: Meta
 }
 
-export interface Datum {
+export interface NewsPageDatum {
   id: number
-  attributes: DatumAttributes
+  attributes: PurpleAttributes
 }
 
-export interface DatumAttributes {
-  Title: string
-  slug: string
+export interface PurpleAttributes {
+  title: string
   description: string
-  content: string
-  createdAt: Date
-  updatedAt: Date
-  publishedAt: Date
-  image: Image
+  slug: string
+  author: Author
+  cover: Cover
+  categories: Categories
 }
 
-export interface Image {
-  data: Data
+export interface Author {
+  data: AuthorData
 }
 
-export interface Data {
+export interface AuthorData {
   id: number
-  attributes: DataAttributes
+  attributes: FluffyAttributes
 }
 
-export interface DataAttributes {
+export interface FluffyAttributes {
   name: string
-  alternativeText: null
-  caption: null
+  surname: string
+}
+
+export interface Categories {
+  data: CategoriesDatum[]
+}
+
+export interface CategoriesDatum {
+  id: number
+  attributes: TentacledAttributes
+}
+
+export interface TentacledAttributes {
+  name: string
+}
+
+export interface Cover {
+  data: CoverData
+}
+
+export interface CoverData {
+  id: number
+  attributes: StickyAttributes
+}
+
+export interface StickyAttributes {
   width: number
   height: number
-  formats: Formats
-  hash: string
-  ext: string
-  mime: string
-  size: number
   url: string
-  previewUrl: null
-  provider: string
-  provider_metadata: null
-  createdAt: Date
-  updatedAt: Date
-}
-
-export interface Formats {
-  thumbnail: Large
-  medium: Large
-  large: Large
-  small: Large
-}
-
-export interface Large {
-  name: string
-  hash: string
-  ext: string
-  mime: string
-  path: null
-  width: number
-  height: number
-  size: number
-  sizeInBytes: number
-  url: string
+  alternativeText: string
 }
 
 export interface Meta {
