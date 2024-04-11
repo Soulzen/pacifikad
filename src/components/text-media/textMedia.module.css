@@ -1,0 +1,31 @@
+.container {
+  /* background-color: var(--clr-primary-soft); */
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.text {
+  list-style-position: inside;
+}
+
+@media (min-width: 900px) {
+  .container {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .row__reverse {
+    flex-direction: row-reverse;
+  }
+
+  .image {
+    flex: 1 1 40%;
+    width: 0;
+  }
+
+  .text {
+    flex: 1 1 60%;
+    width: 0;
+  }
+}
