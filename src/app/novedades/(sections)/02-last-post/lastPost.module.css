@@ -26,9 +26,14 @@
 
 .image {
   border-radius: 0.8em 0.8em 0 0;
+  aspect-ratio: 1/1;
+  object-fit: cover;
 }
 
 .content {
+  display: flex;
+  flex-direction: column;
+
   padding: 0.5em 0;
 }
 
@@ -42,7 +47,41 @@
 
 .description {
   font-size: 1rem;
+  margin-bottom: 1em;
   color: var(--clr-black);
+}
+
+/* Make the author to move to the bottom of the container*/
+
+.author {
+  margin-top: auto;
+  display: flex;
+  justify-self: flex-end;
+  align-items: center;
+  padding: 0.25em 0.25em;
+  border-radius: 5em;
+  background-color: var(--clr-primary-mid);
+}
+
+.avatar {
+  border-radius: 50%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  width: 2.5em;
+  height: 2.5em;
+  margin-right: 0.5em;
+}
+
+.author__role {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--clr-black);
+}
+
+.author__name {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--clr-white);
 }
 
 @media (min-width: 900px) {
@@ -52,9 +91,7 @@
 
   .image {
     border-radius: 0.8em 0 0 0.8em;
-    width: 50%;
-    aspect-ratio: 1/1;
-    object-fit: cover;
+    width: 40%;
   }
 
   .introduction {
@@ -75,5 +112,14 @@
     flex-direction: column;
     justify-content: center;
     gap: 1em;
+  }
+
+  .author {
+    margin-bottom: 1em;
+  }
+
+  .avatar {
+    width: 3em;
+    height: 3em;
   }
 }
