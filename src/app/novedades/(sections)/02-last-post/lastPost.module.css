@@ -60,7 +60,17 @@
   align-items: center;
   padding: 0.25em 0.25em;
   border-radius: 5em;
-  background-color: var(--clr-primary-mid);
+  /* background-color: var(--clr-primary-mid); */
+
+  background: linear-gradient(
+    to right,
+    var(--clr-primary-dark),
+    var(--clr-primary-mid)
+  );
+  /* border-radius: 5px; */
+  /* padding: 10px; */
+  /* background-clip: padding-box; */
+  /* border: solid 10px transparent; */
 }
 
 .avatar {
@@ -99,6 +109,7 @@
   }
 
   .title {
+    margin-top: 1em;
     font-size: 1.5rem;
   }
 
@@ -116,6 +127,7 @@
 
   .author {
     margin-bottom: 1em;
+    padding: 0.5em 0.5em;
   }
 
   .avatar {
