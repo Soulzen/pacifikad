@@ -11,7 +11,8 @@ interface LastPostProps {
 }
 
 const PostCard = ({ post, main }: LastPostProps) => {
-  const { cover, title, description, slug, author } = post.attributes
+  const { cover, title, description, slug, author, categories } =
+    post.attributes
   const {
     url: avatarUrl,
     width: avatarWidth,
@@ -31,6 +32,13 @@ const PostCard = ({ post, main }: LastPostProps) => {
         height={cover.data.attributes.height}
       />
       <div className={`${styles.content} ${main ? styles.contentMain : null}`}>
+        <div className={styles.categories}>
+          {categories.data.map((category) => (
+            <span key={category.id} className={styles.category}>
+              {category.attributes.name}
+            </span>
+          ))}
+        </div>
         <h4 className={`${styles.title} ${main ? styles.titleMain : null}`}>
           {title}
         </h4>

@@ -42,8 +42,21 @@
   }
 }
 
+.category {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--clr-black);
+  background: linear-gradient(
+    to right,
+    var(--clr-white),
+    var(--clr-accent-soft)
+  );
+  padding: 0.25em 0.5em;
+  border-radius: 5em;
+}
+
 .title {
-  margin-bottom: 0.5em;
+  margin: 0.5em 0;
   font-size: 1.25rem;
   font-family: var(--font-accent);
   font-weight: 600;
@@ -52,7 +65,8 @@
 
 .titleMain {
   @media (min-width: 900px) {
-    margin-top: 1em;
+    /* margin-top: 0.5em; */
+    margin: 0;
     font-size: 1.5rem;
   }
 }
