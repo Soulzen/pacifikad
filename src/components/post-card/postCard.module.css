@@ -1,0 +1,162 @@
+.post {
+  display: block;
+  padding: 0.5em 0.5em;
+  background-color: var(--clr-primary-soft);
+  border-radius: 1em;
+}
+
+.postMain {
+  @media (min-width: 900px) {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}
+
+.image {
+  border-radius: 0.8em 0.8em 0 0;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+
+.imageMain {
+  @media (min-width: 900px) {
+    border-radius: 0 0.8em 0.8em 0;
+    width: 40%;
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+
+  padding: 0.5em 0;
+}
+
+.contentMain {
+  @media (min-width: 900px) {
+    padding: 0 0.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1em;
+  }
+}
+
+.title {
+  margin-bottom: 0.5em;
+  font-size: 1.25rem;
+  font-family: var(--font-accent);
+  font-weight: 600;
+  color: var(--clr-primary-dark);
+}
+
+.titleMain {
+  @media (min-width: 900px) {
+    margin-top: 1em;
+    font-size: 1.5rem;
+  }
+}
+
+.description {
+  font-size: 1rem;
+  margin-bottom: 1em;
+  color: var(--clr-black);
+}
+
+.descriptionMain {
+  @media (min-width: 900px) {
+    font-size: 1.125rem;
+  }
+}
+
+/* Make the author to move to the bottom of the container*/
+
+.author {
+  margin-top: auto;
+  display: flex;
+  justify-self: flex-end;
+  align-items: center;
+  padding: 0.25em 0.25em;
+  border-radius: 5em;
+  /* background-color: var(--clr-primary-mid); */
+
+  background: linear-gradient(
+    to right,
+    var(--clr-primary-dark),
+    var(--clr-primary-mid)
+  );
+}
+
+.authorMain {
+  @media (min-width: 900px) {
+    margin-bottom: 1em;
+    padding: 0.5em 0.5em;
+  }
+}
+
+.avatar {
+  border-radius: 50%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  width: 2.5em;
+  height: 2.5em;
+  margin-right: 0.5em;
+}
+
+.avatarMain {
+  @media (min-width: 900px) {
+    width: 3em;
+    height: 3em;
+  }
+}
+
+.author__role {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--clr-black);
+}
+
+.author__name {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--clr-white);
+}
+
+@media (min-width: 900px) {
+  /* .post {
+    display: flex;
+    flex-direction: row-reverse;
+  } */
+
+  /* .image {
+    border-radius: 0 0.8em 0.8em 0;
+    width: 40%;
+  } */
+
+  /* .title {
+    margin-top: 1em;
+    font-size: 1.5rem;
+  } */
+
+  /* .description {
+    font-size: 1.125rem;
+  } */
+
+  /* .content {
+    padding: 0 0.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1em;
+  } */
+
+  /* .author {
+    margin-bottom: 1em;
+    padding: 0.5em 0.5em;
+  } */
+
+  /* .avatar {
+    width: 3em;
+    height: 3em;
+  } */
+}
