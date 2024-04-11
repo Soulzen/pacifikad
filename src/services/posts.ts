@@ -2,15 +2,11 @@ import qs from "qs"
 
 import { API_URL } from "@/config"
 import { NewsPage } from "@/types/NewsPage"
-import { json } from "stream/consumers"
+import { Post } from "@/types/Post"
 
 export async function getBlogs() {
-  const obj = qs.parse(
-    "sort[0]=createdAt:asc&populate[author][fields][0]=name&populate[author][fields][1]=surname&populate[cover][fields][0]=width&populate[cover][fields][1]=height&populate[cover][fields][2]=url&populate[cover][fields][3]=alternativeText&populate[categories][fields][0]=name&fields[0]=title&fields[1]=description&fields[2]=slug&pagination[pageSize]=10&pagination[page]=1"
-  )
-
   const query = {
-    sort: ["createdAt:asc"],
+    sort: ["createdAt:desc"],
     populate: {
       author: {
         fields: ["name", "surname"],
@@ -20,7 +16,7 @@ export async function getBlogs() {
       categories: { fields: ["name"] }
     },
     fields: ["title", "description", "slug"],
-    pagination: { pageSize: "10", page: "1" }
+    pagination: { pageSize: "9", page: "1" }
   }
 
   const url = `${API_URL}/posts?${qs.stringify(query)}`
@@ -29,5 +25,35 @@ export async function getBlogs() {
     throw new Error(res.statusText)
   }
   const data: NewsPage = await res.json()
+  return data
+}
+
+export async function getBlogById(id: string) {
+  const query = {
+    fields: ["title", "slug"],
+    populate: {
+      cover: {
+        fields: ["alternativeText", "width", "height", "url"]
+      },
+      author: {
+        fields: ["name", "surname"]
+      },
+      text_media: {
+        fields: ["richText", "media2Right"],
+        populate: {
+          media: {
+            fields: ["alternativeText", "width", "height", "url"]
+          }
+        }
+      }
+    }
+  }
+
+  const url = `${API_URL}/posts/${id}?${qs.stringify(query)}`
+  const res = await fetch(url)
+  if (!res.ok) {
+    throw new Error(res.statusText)
+  }
+  const data: Post = await res.json()
   return data
 }
