@@ -1,12 +1,14 @@
 import styles from "./posts.module.css"
-import { NewsPageDatum } from "@/types/NewsPage"
+import { NewsPage } from "@/types/NewsPage"
 import PostCard from "@/components/post-card/postCard"
+import Pagination from "@/components/pagination/pagination"
 
 interface LastPostProps {
-  posts: NewsPageDatum[]
+  newsPage: NewsPage
 }
 
-const Posts = ({ posts }: LastPostProps) => {
+const Posts = ({ newsPage }: LastPostProps) => {
+  const { data: posts, meta } = newsPage
   return (
     <section className={styles.section}>
       <div className={styles.container}>
@@ -16,6 +18,7 @@ const Posts = ({ posts }: LastPostProps) => {
             <PostCard key={post.id} post={post} />
           ))}
         </div>
+        <Pagination pagination={meta.pagination} />
       </div>
     </section>
   )

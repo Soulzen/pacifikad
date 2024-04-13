@@ -4,7 +4,7 @@ import { API_URL } from "@/config"
 import { NewsPage } from "@/types/NewsPage"
 import { Post } from "@/types/Post"
 
-export async function getBlogs() {
+export async function getBlogs(page: number = 1) {
   const query = {
     sort: ["createdAt:desc"],
     populate: {
@@ -16,7 +16,31 @@ export async function getBlogs() {
       categories: { fields: ["name"] }
     },
     fields: ["title", "description", "slug"],
-    pagination: { pageSize: "9", page: "1" }
+    pagination: { pageSize: "3", page: `${page}` }
+  }
+
+  const url = `${API_URL}/posts?${qs.stringify(query)}`
+  const res = await fetch(url)
+  if (!res.ok) {
+    throw new Error(res.statusText)
+  }
+  const data: NewsPage = await res.json()
+  return data
+}
+
+export async function getLastBlog() {
+  const query = {
+    sort: ["createdAt:desc"],
+    populate: {
+      author: {
+        fields: ["name", "surname"],
+        populate: ["avatar"]
+      },
+      cover: { fields: ["width", "height", "url", "alternativeText"] },
+      categories: { fields: ["name"] }
+    },
+    fields: ["title", "description", "slug"],
+    pagination: { pageSize: "1", page: "1" }
   }
 
   const url = `${API_URL}/posts?${qs.stringify(query)}`
