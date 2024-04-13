@@ -20,11 +20,11 @@ const Pagination = ({ pagination }: PaginationProps) => {
   return (
     <div className={styles.pagination}>
       <span className={styles.pagination__info}>
-        Showing <span className={styles.pagination__info_data}>{from}</span> to{" "}
-        <span className={styles.pagination__info_data}>{to}</span> of{" "}
-        <span className={styles.pagination__info_data}>{total}</span> Entries
+        Mostrando <span className={styles.pagination__info_data}>{from}</span> -{" "}
+        <span className={styles.pagination__info_data}>{to}</span> de{" "}
+        <span className={styles.pagination__info_data}>{total}</span> entradas
       </span>
-      <div className={styles.navigation}>
+      <nav className={styles.navigation}>
         {isFirstPage ? (
           <div
             className={styles.navLink}
@@ -109,7 +109,7 @@ const Pagination = ({ pagination }: PaginationProps) => {
             </svg>
           </Link>
         )}
-      </div>
+      </nav>
     </div>
   )
 }
