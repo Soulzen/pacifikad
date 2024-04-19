@@ -12,7 +12,7 @@ const Posts = ({ newsPage }: LastPostProps) => {
   return (
     <section className={styles.section}>
       <div className={styles.container}>
-        <h2 className={styles.title}>Más novedades</h2>
+        <h2 className={styles.title}>Otras novedades</h2>
         <div className={styles.posts}>
           {posts.map((post) => (
             <PostCard key={post.id} post={post} />
