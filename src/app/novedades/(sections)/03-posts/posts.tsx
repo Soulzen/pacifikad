@@ -1,3 +1,5 @@
+"use client"
+
 import styles from "./posts.module.css"
 import { NewsPage } from "@/types/NewsPage"
 import PostCard from "@/components/post-card/postCard"
